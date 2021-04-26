@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="540dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageview_head_big"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+
+</LinearLayout><!-- From: file:/D:/ShootBox/app/src/main/res/layout/imagedialogview.xml -->

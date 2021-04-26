@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <RelativeLayout
+       android:id="@+id/tv_01"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#3296FA">
+       <com.await.qq.tool.CircleImageView
+           android:id="@+id/icon_main"
+           android:layout_marginLeft="10dp"
+           android:layout_width="96dp"
+           android:layout_height="96dp"
+           android:src="@mipmap/logo7"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:textSize="30sp"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="130dp"
+           android:text="摇光"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:textSize="15sp"
+           android:layout_marginTop="60dp"
+           android:layout_marginLeft="130dp"
+           android:text="要相信光！"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/item_rg" />
+    </RelativeLayout>
+    <ListView
+
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_01"
+        android:layout_above="@id/rl_01"
+        />
+
+</RelativeLayout>
