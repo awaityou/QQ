@@ -3,6 +3,8 @@ package com.await.qq;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +14,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 public class LoginActivity extends Activity implements View.OnClickListener {
+
+    /**
+     * chau
+     */
+
 
     private static final String TAG = "221312";
     private Button button;
@@ -56,5 +63,18 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     }
 
+
+    /**
+     * Called when the database is created for the first time. This is where the
+     * creation of tables and the initial population of the tables should happen.
+     *
+     */
+    private void loginData(){
+        Intent intent = new Intent();
+        intent.setClass(this,MainActivity.class);
+        intent.putExtra("username","root");
+        intent.putExtra("passcode","10086");
+        startActivity(intent);
+    }
 
 }
