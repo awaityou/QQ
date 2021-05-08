@@ -15,9 +15,8 @@ import androidx.annotation.Nullable;
 
 public class LoginActivity extends Activity implements View.OnClickListener {
 
-    /**
-     * chau
-     */
+
+
 
 
     private static final String TAG = "221312";
@@ -76,5 +75,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         intent.putExtra("passcode","10086");
         startActivity(intent);
     }
+
+     /**
+     * 对登录进行验证
+     */
+
 
 }
