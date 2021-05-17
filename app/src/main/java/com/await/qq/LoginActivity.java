@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.await.qq.tool.FileSaveQQ;
@@ -24,6 +25,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     /**
      * 账号输入框
      */
+
     private EditText et_passcode;
     private EditText et_username;
 
@@ -54,6 +56,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         buttonLogin.setClickable(false);
 
     }
+
+    // 测试github
 
     // 初始化控件
     private void initView() {
