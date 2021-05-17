@@ -60,7 +60,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         buttonLogin = findViewById(R.id.login);
         et_username = findViewById(R.id.user_edit);
         et_passcode = findViewById(R.id.pass_edit);
-
+        // 三个图片控件
+        userDelImageView = findViewById(R.id.user_del);
 
     }
 
