@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -26,8 +27,15 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private EditText et_passcode;
     private EditText et_username;
 
+    /**
+     *  定义文本框右边的提示信息
+     */
+    private ImageView passCodeImageView;
+    private ImageView userDelImageView;
+    private ImageView passCodeEyesImageView;
+
     private static final String TAG = "221312";
-    private Button button;
+    private Button buttonLogin;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,18 +50,23 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         initView();
         initLister();
 
+        /*初始化登录按钮不可点击*/
+        buttonLogin.setClickable(false);
+
     }
 
     // 初始化控件
     private void initView() {
-        button = findViewById(R.id.login);
-        et_username = findViewById(R.id.user);
-        et_passcode = findViewById(R.id.pass);
+        buttonLogin = findViewById(R.id.login);
+        et_username = findViewById(R.id.user_edit);
+        et_passcode = findViewById(R.id.pass_edit);
+
+
     }
 
     // 添加监听
     private void initLister() {
-        button.setOnClickListener(this);
+        buttonLogin.setOnClickListener(this);
     }
 
 
